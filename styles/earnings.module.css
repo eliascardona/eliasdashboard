@@ -1,0 +1,84 @@
+.table_outer {
+  /* padding: 20px; */
+  box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),
+    0 1px 8px 0 rgb(39 44 51/2%);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.table_table_header > tr > th {
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1.4px solid rgb(231, 231, 231);
+  cursor: pointer;
+}
+.table_table_header > tr> th ion-icon{
+    transform: rotate(90deg);
+    font-size: 12px;
+}
+
+.table_table_row img {
+  object-fit: cover;
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.total{
+    font-weight: 600;
+    color: #333;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.footer2{
+    padding: 10px;
+    text-align: right;
+}
+.table_pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.table_pagination > ul > li{
+    display: inline-block;
+    padding: 3px 15px;
+    border-right: 1px solid #ccc;
+    color:#999;
+    cursor:pointer;
+    font-weight: 600;
+}
+.table_pagination > ul > li:hover{
+    background: #f1f1f1;
+}
+
+.table_pagination > ul > li:last-child{
+    border-right: none;
+}
+.table_pagination > ul > li ion-icon{
+    position: relative;
+    top: 1px;
+    margin: 0 4px;
+    font-size: 12px;
+}
+.course_div{
+    display: flex;
+    gap:20px;
+    font-weight: 600;
+}
+.course_div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.course_div > div > p{
+    margin-bottom: 6px;
+}
+.course_div > div > small {
+    color: #999;
+    font-weight: 400;
+}

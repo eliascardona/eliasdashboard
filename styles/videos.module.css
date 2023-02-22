@@ -1,0 +1,149 @@
+/*Table Header*/
+
+.table_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.table_table_header{
+  border-bottom: transparent;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),0 1px 8px 0 rgb(39 44 51/2%);
+}
+
+
+.table_table_header > tr > th {
+  font-weight: 400;
+  color: #555;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.table_table_row {
+  border-bottom: transparent;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),0 1px 8px 0 rgb(39 44 51/2%);
+  transition: 0.3s;
+}
+
+.table_table_row:hover {
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgb(149 157 165 / 27%) 0px 5px 10px;
+}
+
+.table_table_row img{
+  object-fit: cover;
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*Table Header*/
+
+/*Video*/
+.video_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.video_input_input {
+  display: none;
+}
+
+.video_input_video {
+  display: block;
+  margin: 0;
+}
+
+.video_input_footer {
+  background: #eee;
+  width: 100%;
+  min-height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/*Video*/
+
+/*Custom Delete Modal*/
+.form_card{
+    padding: 40px 40px 85px 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+.my_modal_outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+  width: 100%;
+  height: 100%;
+  background: #00000078;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my_modal {
+  z-index: 111111;
+  max-width: 500px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+.my_modal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.my_modal_content {
+  padding: 25px 15px;
+}
+.my_modal_actions {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #f1f1f1;
+}
+/*Custom Delete Modal*/
+
+/*Lessons*/
+
+
+.close_button {
+  border: 1px solid #777;
+  padding: 7px;
+  border-radius: 5px;
+  position: absolute;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+.close_button ion-icon{
+  font-size: 18px;
+}
+/*Lessons*/
+
+
+
+@media (max-width: 768px){
+    .form_card{
+        padding: 20px 20px 80px 20px;
+      }
+}
+
+@media (max-width: 1420px){
+  .table_table__row > td > button{
+    width: 100% !important; 
+  }
+}

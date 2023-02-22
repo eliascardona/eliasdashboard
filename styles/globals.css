@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+
+body {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  line-height: 1.55rem;
+  letter-spacing: -0.015rem;
+  color: #000;
+  background: #f7f7f7;
+}
+
+a {
+  color: rgb(0, 108, 250);
+}
+
+button {
+  cursor: pointer;
+}
+.right{
+  float: right;
+}
+/* Button Dark */
+.btn_dark{
+  background-color: #000;
+  color: #FFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border:none;
+  box-shadow: 1px 4px 70px -24px rgba(0,0,0,0.1);
+  position: relative;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_dark ion-icon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.btn_dark:hover{
+  color:#fff;
+  box-shadow: 1px 4px 97px -24px rgba(0,0,0,0.7);
+  top:-3px;
+}
+.btn_grey{
+  background: #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border:none;
+  box-shadow: 1px 4px 70px -24px rgba(0,0,0,0.1);
+  position: relative;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_grey ion-icon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.btn_grey:hover{
+ box-shadow: 1px 4px 97px -24px rgba(0,0,0,0.7);
+  top:-3px;
+
+}
+/* Button Dark */
+
+/*Breadcrumbs*/
+.breadcrumbs{
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+
+}
+.breadcrumbs a{
+  color: #acacac;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.breadcrumbs ion-icon{
+  color: #acacac;
+  font-size: 12px;
+  margin: 0 3px;
+}
+/*Breadcrumbs*/
+
+/*main layout page container*/
+.main_layout_container {
+  padding-top: 100px;
+  margin-left: 300px;
+}
+/*main layout page container*/
+
+/* ion-icon {
+  font-size: 39px;
+} */
+
+/* Header Design Css */
+.my_navbar {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  width: calc(100% - 300px);
+  background: #fff;
+  z-index: 1111;
+  padding: 15px 10px;
+
+}
+.header_right_side {
+  width: 100%;
+  /* margin-left: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menu_right_buttons{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* Menu */
+.menu_list {
+  margin-left: 17%;
+}
+
+.menu_list > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu_list > ul > li {
+  margin: 0 10px;
+  display: inline-block;
+}
+.menu_list > ul > li a {
+  color: rgba(39, 44, 51, 0.5);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu_list > ul > li > a:hover {
+  color: rgba(39, 44, 51, 0.7);
+}
+/* Menu */
+
+/*Search box*/
+.other_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.search_box {
+  background-color: #edf0f2;
+  border: 1px solid #edf0f2;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 1px 1px rgb(39 44 51 / 8%);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 0.25rem;
+}
+.search_box > button {
+  background: transparent;
+  border: none;
+  display: flex;
+}
+.search_box .hydrated {
+  font-size: 16px;
+  color: rgba(39, 44, 51, 0.4);
+}
+
+.search_box > input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+.search_box > input::placeholder {
+  color: rgba(39, 44, 51, 0.4);
+  font-weight: 500;
+}
+/*Search box*/
+/*Login Btn*/
+.login_btn {
+  margin-left: 20px;
+  position: relative;
+  top: 4px;
+  cursor: pointer;
+}
+.login_btn .hydrated {
+  color: rgba(39, 44, 51, 0.5);
+  font-size: 22px;
+}
+/*Login Btn*/
+/*Get Started Button*/
+.get_started_btn {
+  margin-left: 20px;
+}
+.get_started_btn > button {
+  font-weight: 600;
+  border: 1px solid #303840;
+  border-radius: 0.25rem;
+  background: transparent;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  padding: 8px 15px;
+}
+.get_started_btn > button:hover {
+  background-color: #333;
+  color: #fff;
+}
+/*Get Started Button*/
+
+/*custom sidebar*/
+.custom_sidebar {
+  z-index: 11111;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background: #fff;
+  border-right: 1px solid #eeeeee;
+  /* box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),0 1px 8px 0 rgb(39 44 51/2%); */
+  padding: 0px 25px;
+}
+
+.sidebar_menu_name {
+  margin: 10px 0;
+  padding: 15px 15px;
+  color: #777281;
+  transition: 0.2s;
+  cursor: pointer;
+  overflow-y: auto;
+  background-color: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.sidebar_menu_name ion-icon {
+  font-size: 23px;
+  margin-right: 10px;
+}
+.sidebar_menu_name:hover {
+  opacity: 0.9;
+}
+.custom_logo {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+.sidebar_profile{
+  margin-top: 10px;
+  margin-bottom: 60px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  color:#222;
+}
+.sidebar_profile_image{
+  margin-right: 15px;
+}
+.sidebar_profile_image img{
+  width:40px;
+  height:40px;
+  border:2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sidebar_profile_text{
+  line-height: 1.3;
+}
+.sidebar_profile_text div{
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.sidebar_profile_text small{
+  color:#777;
+}
+/*custom sidebar*/
+
+/*My Header*/
+.my_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  color: #303840;
+  font-weight: 600;
+  letter-spacing: 2px;
+  gap: 10px;
+  white-space: nowrap;
+}
+.my_header_line {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 1.5px;
+}
+/*My Header*/
+
+/*Course Card*/
+.course_card {
+  box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),
+    0 1px 8px 0 rgb(39 44 51 / 2%);
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #dfe2e6;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.course_image {
+  background-size: cover !important;
+  height: 230px;
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.course_image_bg {
+  height: 100%;
+  background-color: rgba(85, 103, 255, 0.95);
+  opacity: 0.9;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.course_image_bg span {
+  margin-left: 5px;
+}
+.course_content {
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  bottom: 0;
+}
+.collapse_content {
+  transition: 0.3s;
+  overflow: hidden;
+}
+.collapse_content small {
+  color: rgba(39, 44, 51, 0.5);
+}
+.course_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+}
+.course_icon {
+  color: rgba(39, 44, 51, 0.5);
+  cursor: pointer;
+}
+.course_text h5 {
+  margin: 0;
+}
+
+.stars_div {
+  color: #f9c32c;
+}
+.course_time small {
+  color: rgba(39, 44, 51, 0.5);
+}
+/*Course Card*/
+
+
+
+/*Login*/
+.login_container {
+  /* background-color: #303956; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_box {
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),0 1px 8px 0 rgb(39 44 51/2%); */
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+.login_button .btn_dark{
+  width: 100%;
+}
+/*Login*/
+
+/*404*/
+.error_page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*404*/
+
+/*Accordions Form*/
+.accordion-item {
+  border: 1px solid #999 !important;
+  margin: 10px 0;
+}
+.accordion-button {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #f9f9f9 !important;
+}
+
+/*Accordions Form*/
+/*Table*/
+.table{
+  width: 97% !important;
+  margin: 0 auto;
+  margin-bottom: 25px !important;
+  border-spacing: 0 1em !important;
+  border-collapse:separate !important;
+}
+.table_earning{
+  width: 100% !important;
+  margin-bottom: 0 !important;
+  border-spacing: 0 !important;
+}
+/*Table*/
+
+/*Forms*/
+.form-control{
+  border:1px solid #ccc !important;
+  outline: none !important;
+  box-shadow: none !important;  
+  padding: 12px !important;
+  transition: 0.3s;
+}
+.form-control:focus{
+  border:1px solid #000 !important;
+  box-shadow: 0 0 0 0.1rem rgb(0 0 0) !important;
+}
+
+.form-control-file{
+  padding: 6px !important;
+}
+/*Forms*/
+
+@media (min-width: 270px) and (max-width: 679px) {
+  ion-icon {
+    font-size: 20px;
+    /* --ionicon-stroke-width: 20px; */
+  }
+}
+
+#hamburger {
+  display: none;
+}
+.link-wrap {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .custom_sidebar {
+    display: none;
+  }
+  .my_navbar{
+    width: 100%;
+  }
+  .menu_list {
+    display: none;
+  }
+  .search_box {
+    display: none;
+  }
+  .other_options {
+    justify-content: flex-end;
+  }
+
+  .main_layout_container {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .login_box{
+    min-width: 90%;
+  }
+  .course_card{
+    margin-bottom: 20px;
+  }
+
+  /* mobile menu css */
+  .link-wrap {
+    /* transform: translateX(-100%); */
+    display: block;
+    background: #fff;
+    z-index: 11111;
+    color: #777281;
+    padding: 25px 0x;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width:100%;
+    box-shadow: 0 3px 3px -2px rgb(39 44 51 / 10%), 0 3px 4px 0 rgb(39 44 51 / 4%),0 1px 8px 0 rgb(39 44 51/2%);
+    transition: 0.5s;
+  }
+ 
+  .mobile_menu_close{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+  }
+  .mobile_menu_close > button{
+    background-color: transparent;
+    color:#000;
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  .mobile_menu_close ion-icon{
+    font-size: 30px;
+  }
+  .slideIn {
+    /* width: 0px; */
+    transform: translateX(-100%);
+  }
+
+  .slideOut {
+    /* width: 260px; */
+    transform: translateX(0%);
+    padding: 20px;
+  }
+
+  #hamburger {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  #hamburger ion-icon{
+    font-size: 40px;
+  }
+
+  /* mobile menu css */
+
+  /* Mobile Search */
+  .mobile_search {
+    background-color: #edf0f2;
+    border: 1px solid #edf0f2;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 1px rgb(39 44 51 / 8%);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0.25rem;
+  }
+  .mobile_search > button {
+    background: transparent;
+    border: none;
+    display: flex;
+  }
+  .mobile_search .hydrated {
+    font-size: 14px;
+    color: rgba(39, 44, 51, 0.4);
+  }
+
+  .mobile_search > input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+  }
+  .search_box > input::placeholder {
+    color: rgba(39, 44, 51, 0.4);
+    font-weight: 500;
+  }
+}
